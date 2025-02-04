@@ -1,0 +1,69 @@
+{
+  // 📁 **Configurações de Arquivos**
+  "files.exclude": {
+    "eslint.config.mjs": true,
+    "node_modules": true,
+    "package-lock.json": true
+  },
+  // 🖋️ **Configurações de Editor de Código**
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "underline",
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.letterSpacing": 1,
+  "editor.lineHeight": 1.8,
+  "editor.tabSize": 2,
+  // 🛠️ **Configurações de Formatação no Editor**
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "none",
+  // 📊 **Configurações de Interface do Editor**
+  "editor.lineNumbers": "off",
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.smoothScrolling": true,
+  "editor.foldingHighlight": false,
+  "editor.padding.bottom": 20,
+  "editor.padding.top": 20,
+  // 🗂️ **Configurações de Navegação e Explorer**
+  "breadcrumbs.enabled": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  // 🔧 **Configurações de Barra de Ferramentas e Layout**
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.showTabs": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": false,
+  // 🔒 **Configurações de Segurança e Confiança**
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  // 💻 **Configurações de Terminal**
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorStyleInactive": "underline",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.letterSpacing": 1,
+  // 💾 **Configurações de Formatação e Salvamento**
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  // ⚙️ **Outras Configurações Gerais**
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  "window.restoreWindows": "none",
+  "window.title": "${activeEditorShort}",
+  "window.zoomLevel": 0.75
+}
