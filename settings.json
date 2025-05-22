@@ -1,36 +1,44 @@
 {
-  // Prisma
+  // 🧩 Extensões
   "[prisma]": {
     "editor.formatOnSave": true
   },
+  "workbench.iconTheme": "eyecons",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "newUntitledFile",
 
-  // Geral
-  "editor.matchBrackets": "never",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
-  "prettier.trailingComma": "es5",
-  "prettier.bracketSpacing": true,
-  "prettier.arrowParens": "always",
-  "prettier.endOfLine": "auto",
+  // 🧱 Layout
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.showTabs": "none",
+  "workbench.layoutControl.enabled": false,
+
+  // 🗂️ Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "workbench.tree.indent": 16,
 
   // 📁 Arquivos
   "files.exclude": {
-    "eslint.config.mjs": false,
     "node_modules": true,
     "package-lock.json": true,
-    "yarn.lock": true
+    "yarn.lock": true,
+    "eslint.config.mjs": false
   },
 
   // 🖋️ Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.matchBrackets": "never",
   "editor.autoClosingQuotes": "languageDefined",
   "editor.cursorBlinking": "smooth",
   "editor.cursorStyle": "line",
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": "400",
   "editor.letterSpacing": 1,
@@ -49,46 +57,39 @@
   "editor.foldingHighlight": false,
   "editor.padding.top": 20,
   "editor.padding.bottom": 20,
+  "editor.stickyScroll.enabled": false,
 
-  // 📊 Explorer
-  "breadcrumbs.enabled": false,
-  "explorer.compactFolders": false,
-  "explorer.confirmDelete": false,
-  "explorer.decorations.badges": false,
-  "explorer.decorations.colors": false,
-  "workbench.tree.indent": 16,
-
-  // 🔧 Layout
-  "workbench.activityBar.location": "hidden",
-  "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.editor.enablePreview": true,
-  "workbench.editor.showTabs": "none",
-  "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": false,
-
-  // 🔒 Segurança
-  "security.workspace.trust.banner": "never",
-  "security.workspace.trust.untrustedFiles": "open",
+  // 🧾 Prettier
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "auto",
 
   // 💻 Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.letterSpacing": 1,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorStyleInactive": "line",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.letterSpacing": 1,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
 
   // ⚙️ Janela
   "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
   "window.restoreWindows": "none",
   "window.title": "${activeEditorShort}",
   "window.zoomLevel": 0.75,
-  "editor.stickyScroll.enabled": false,
-  "workbench.iconTheme": "eyecons",
-  "workbench.editor.empty.hint": "hidden",
-  "chat.commandCenter.enabled": false,
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Vesper"
+  "chat.commandCenter.enabled": false,
+
+  // 🔒 Segurança
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.colorTheme": "gruvboxConcoctis dark hard",
+  "breadcrumbs.filePath": "off",
+  "window.menuBarVisibility": "compact"
 }
