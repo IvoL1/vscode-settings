@@ -1,95 +1,221 @@
 {
-  // 🧩 Extensões
-  "[prisma]": {
-    "editor.formatOnSave": true
-  },
+  // =============================================================================
+  // 🎨 APARÊNCIA E TEMA
+  // =============================================================================
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.iconTheme": "eyecons",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.startupEditor": "newUntitledFile",
 
-  // 🧱 Layout
+  // =============================================================================
+  // 🖥️ INTERFACE E LAYOUT
+  // =============================================================================
+  // Barra de atividades e status
   "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false,
+
+  // Editor e abas
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.startupEditor": "newUntitledFile",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.enablePreview": true,
   "workbench.editor.showTabs": "none",
-  "workbench.layoutControl.enabled": false,
 
-  // 🗂️ Explorer
+  // Navegação e breadcrumbs
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "off",
+
+  // =============================================================================
+  // 🗂️ EXPLORADOR DE ARQUIVOS
+  // =============================================================================
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "explorer.decorations.colors": false,
   "workbench.tree.indent": 16,
 
-  // 📁 Arquivos
+  // =============================================================================
+  // 📁 GERENCIAMENTO DE ARQUIVOS
+  // =============================================================================
+  // Arquivos excluídos
   "files.exclude": {
     "node_modules": true,
     "package-lock.json": true,
     "yarn.lock": true,
-    "eslint.config.mjs": false
+    "eslint.config.mjs": true
   },
 
-  // 🖋️ Editor
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.matchBrackets": "never",
-  "editor.autoClosingQuotes": "languageDefined",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorStyle": "line",
-  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  // Configurações de arquivo
+  "files.autoSave": "onWindowChange",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // =============================================================================
+  // 🖋️ EDITOR DE CÓDIGO
+  // =============================================================================
+  // Fonte e aparência
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": "400",
   "editor.letterSpacing": 1,
   "editor.lineHeight": 1.8,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 80,
-  "editor.renderLineHighlight": "none",
-  "editor.renderWhitespace": "none",
+
+  // Layout e visual
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
+  "editor.padding.top": 20,
+  "editor.padding.bottom": 20,
+  "editor.rulers": [80, 120],
+
+  // Comportamento
+  "editor.matchBrackets": "never",
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "none",
   "editor.scrollBeyondLastLine": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.smoothScrolling": true,
-  "editor.foldingHighlight": false,
-  "editor.padding.top": 20,
-  "editor.padding.bottom": 20,
   "editor.stickyScroll.enabled": false,
+  "editor.foldingHighlight": false,
 
-  // 🧾 Prettier
+  // Quebra de linha
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+
+  // Indentação
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  // =============================================================================
+  // 🎯 FORMATAÇÃO E LINTING
+  // =============================================================================
+  // Formatação geral
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Ações ao salvar
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // Formatadores por linguagem
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+
+  // =============================================================================
+  // 🔍 ESLINT
+  // =============================================================================
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.format.enable": false,
+
+  // =============================================================================
+  // 💅 PRETTIER
+  // =============================================================================
+  "prettier.requireConfig": false,
+  "prettier.singleQuote": true,
   "prettier.semi": true,
-  "prettier.singleQuote": false,
   "prettier.tabWidth": 2,
-  "prettier.printWidth": 100,
   "prettier.trailingComma": "es5",
+  "prettier.printWidth": 80,
+  "prettier.useTabs": false,
   "prettier.bracketSpacing": true,
-  "prettier.arrowParens": "always",
-  "prettier.endOfLine": "auto",
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "lf",
+  "prettier.bracketSameLine": false,
+  "prettier.quoteProps": "as-needed",
 
-  // 💻 Terminal
-  "terminal.integrated.fontSize": 14,
+  // =============================================================================
+  // 📘 TYPESCRIPT
+  // =============================================================================
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.preferences.organizeImports": true,
+
+  // =============================================================================
+  // 📜 JAVASCRIPT
+  // =============================================================================
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // =============================================================================
+  // 🚀 EMMET
+  // =============================================================================
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  // =============================================================================
+  // 💻 TERMINAL
+  // =============================================================================
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.letterSpacing": 1,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorStyleInactive": "line",
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "zsh",
 
-  // ⚙️ Janela
-  "window.commandCenter": false,
+  // =============================================================================
+  // 🖼️ JANELA
+  // =============================================================================
   "window.restoreWindows": "none",
   "window.title": "${activeEditorShort}",
   "window.zoomLevel": 0.75,
   "window.titleBarStyle": "custom",
-  "chat.commandCenter.enabled": false,
+  "window.menuBarVisibility": "compact",
 
-  // 🔒 Segurança
+  // =============================================================================
+  // 🔒 SEGURANÇA
+  // =============================================================================
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.colorTheme": "gruvboxConcoctis dark hard",
-  "breadcrumbs.filePath": "off",
-  "window.menuBarVisibility": "compact"
+
+  // =============================================================================
+  // 📋 MARKDOWN
+  // =============================================================================
+  "markdown-preview-enhanced.revealjsTheme": "none.css",
+  "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+  "markdown-preview-enhanced.previewTheme": "one-dark.css"
 }
