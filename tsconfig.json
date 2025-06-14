@@ -1,0 +1,83 @@
+{
+  "compilerOptions": {
+    // =============================================================================
+    // 🎯 TARGET E MÓDULOS - Configurações básicas de compilação
+    // =============================================================================
+    "target": "ES2022", // Versão JS de destino - ES2022 é mais compatível
+    "module": "ESNext", // Sistema de módulos moderno
+    "moduleResolution": "bundler", // Resolução moderna para bundlers
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], // Bibliotecas disponíveis
+
+    // =============================================================================
+    // 📁 CAMINHOS E RESOLUÇÃO - Como encontrar arquivos
+    // =============================================================================
+    "baseUrl": "./", // Diretório base para imports relativos
+    "rootDir": "./src", // Pasta raiz do código fonte
+    "outDir": "./dist", // Pasta de saída da compilação
+    "resolveJsonModule": true, // Permite importar arquivos JSON
+
+    // =============================================================================
+    // 🔄 INTEROPERABILIDADE - Compatibilidade entre módulos
+    // =============================================================================
+    "esModuleInterop": true, // Compatibilidade ES modules com CommonJS
+    "allowSyntheticDefaultImports": true, // Permite default imports sintéticos
+    "forceConsistentCasingInFileNames": true, // Força consistência em nomes de arquivos
+    "allowJs": true, // Permite arquivos JavaScript no projeto
+    "checkJs": false, // Não verifica tipos em arquivos JS (performance)
+
+    // =============================================================================
+    // 🚨 TYPE CHECKING - Verificação rigorosa de tipos
+    // =============================================================================
+    "strict": true, // Ativa TODAS as verificações rígidas
+    "noImplicitAny": true, // Proíbe tipos 'any' implícitos
+    "strictNullChecks": true, // Verificação rigorosa de null/undefined
+    "strictFunctionTypes": true, // Verificação rigorosa de tipos de função
+    "noImplicitReturns": true, // Todas as funções devem retornar valor
+    "noFallthroughCasesInSwitch": true, // Proíbe fallthrough em switch sem break
+    "noUncheckedIndexedAccess": true, // Tipos mais seguros para acesso por índice
+    "exactOptionalPropertyTypes": true, // Propriedades opcionais mais precisas
+
+    // =============================================================================
+    // 🧹 LIMPEZA DE CÓDIGO - Remove código não utilizado
+    // =============================================================================
+    "noUnusedLocals": true, // Erro para variáveis locais não utilizadas
+    "noUnusedParameters": true, // Erro para parâmetros não utilizados
+    "noImplicitOverride": true, // Força uso de 'override' keyword
+
+    // =============================================================================
+    // 📤 GERAÇÃO DE ARQUIVOS - Como gerar os arquivos compilados
+    // =============================================================================
+    "declaration": true, // Gera arquivos .d.ts para tipagem
+    "declarationMap": true, // Mapeia declarações para debugging
+    "sourceMap": true, // Gera source maps para debugging
+    "removeComments": true, // Remove comentários do código compilado
+    "noEmitOnError": true, // Não gera arquivos se houver erros
+
+    // =============================================================================
+    // ⚡ PERFORMANCE - Otimizações de compilação
+    // =============================================================================
+    "skipLibCheck": true, // Pula verificação de tipos em node_modules
+    "incremental": true, // Compilação incremental (mais rápida)
+    "isolatedModules": true, // Cada arquivo como módulo isolado
+
+    // =============================================================================
+    // 🔧 CONFIGURAÇÕES MODERNAS - Para bundlers e ferramentas atuais
+    // =============================================================================
+    "moduleDetection": "force", // Força detecção de módulos
+    "verbatimModuleSyntax": false // Permite transformações de sintaxe
+  },
+
+  // =============================================================================
+  // 📂 INCLUSÃO E EXCLUSÃO - Quais arquivos processar
+  // =============================================================================
+  "include": [
+    "src/**/*", // Inclui todos os arquivos da pasta src
+    "types/**/*" // Inclui definições de tipos customizadas
+  ],
+  "exclude": [
+    "node_modules", // Exclui dependências
+    "dist", // Exclui pasta de build
+    "**/*.test.ts", // Exclui arquivos de teste
+    "**/*.spec.ts" // Exclui arquivos de especificação
+  ]
+}
