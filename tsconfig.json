@@ -27,7 +27,16 @@
 
     "skipLibCheck": true, // Ignora erros de bibliotecas
     "incremental": true, // Compilação mais rápida
-    "isolatedModules": true // Cada arquivo independente
+    "isolatedModules": true, // Cada arquivo independente
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
 
   "paths": {
