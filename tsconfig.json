@@ -1,43 +1,35 @@
 {
   "compilerOptions": {
-    "target": "ES2022", // Versão JS final
-    "module": "ESNext", // Sistema de módulos moderno
-    "moduleResolution": "bundler", // Como encontrar imports
-    "lib": ["ES2022", "DOM"], // Recursos JS disponíveis
-
-    "rootDir": "./src", // Onde está seu código
-    "outDir": "./dist", // Onde vai o código compilado
-    "resolveJsonModule": true, // Permite importar JSON
-
-    "esModuleInterop": true, // Mistura ES modules + CommonJS
-    "allowSyntheticDefaultImports": true, // Imports mais limpos
-    "forceConsistentCasingInFileNames": true, // arquivo.js ≠ Arquivo.js
-    "allowJs": true, // Aceita arquivos .js também
-
-    "strict": true, // Ativa TODAS verificações
-    "noImplicitReturns": true, // Função deve sempre retornar algo
-    "noFallthroughCasesInSwitch": true, // Switch precisa de break
-    "noUnusedLocals": true, // Erro se variável não for usada
-    "noUnusedParameters": true, // Erro se parâmetro não for usado
-
-    "declaration": false, // Cria manual de instruções (.d.ts)
-    "sourceMap": true, // Para debug no navegador
-    "removeComments": true, // Remove comentários do build
-    "noEmitOnError": true, // Não compila se tiver erro
-
-    "skipLibCheck": true, // Ignora erros de bibliotecas
-    "incremental": true, // Compilação mais rápida
-    "isolatedModules": true, // Cada arquivo independente
-    "allowImportingTsExtensions": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM"],
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": false,
+    "sourceMap": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noUncheckedIndexedAccess": true
   },
-
-  "paths": {
-    "@/*": ["./src/*"] // Atalho: @ = pasta src
-  },
-
-  "include": ["src/**/*"], // Tudo dentro de src
-  "exclude": ["node_modules", "dist", "**/*.test.ts"] // O que ignorar
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }
