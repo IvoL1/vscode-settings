@@ -2,7 +2,7 @@
   // Breadcrumbs
   "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
-  
+
   // cSpell
   "cSpell.enabled": true,
   "cSpell.ignoreWords": ["datasource"],
@@ -17,7 +17,7 @@
     "Prisma",
     "uuid"
   ],
-  
+
   // Editor Appearance
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "smooth",
@@ -35,7 +35,7 @@
   "editor.guides.highlightActiveBracketPair": false,
   "editor.guides.highlightActiveIndentation": false,
   "editor.guides.indentation": false,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": true,
   "editor.insertSpaces": true,
   "editor.letterSpacing": 1,
   "editor.lineHeight": 24,
@@ -57,26 +57,26 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
-  
+
   // Editor Behavior
   "editor.autoClosingQuotes": "always",
-  
+
   // Emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  
+
   // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "explorer.decorations.colors": false,
-  
+
   // Extensions
   "extensions.ignoreRecommendations": true,
-  
+
   // Files
   "files.autoSave": "onWindowChange",
   "files.eol": "\n",
@@ -94,19 +94,19 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  
+
   // Git
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  
+
   // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "always",
-  
+
   // Markdown Preview Enhanced
   "markdown-preview-enhanced.codeBlockTheme": "auto.css",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "markdown-preview-enhanced.revealjsTheme": "none.css",
-  
+
   // Prettier
   "prettier.arrowParens": "always",
   "prettier.bracketSpacing": true,
@@ -115,16 +115,16 @@
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "es5",
-  
+
   // Prisma
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  
+
   // Security
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.untrustedFiles": "open",
-  
+
   // Terminal
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -132,12 +132,12 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.letterSpacing": 0,
-  
+
   // TypeScript
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  
+
   // Window
   "window.commandCenter": false,
   "window.menuBarVisibility": "compact",
@@ -145,15 +145,19 @@
   "window.title": "${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0.75,
-  
+
   // Workbench
   "workbench.activityBar.location": "default",
-  "workbench.colorTheme": "DevNight DeepSeek",
+  "workbench.colorTheme": "Monokai",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.showTabs": "multiple",
   "workbench.iconTheme": "eyecons",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
-  "workbench.tree.indent": 16
+  "workbench.tree.indent": 16,
+
+  // GitHub Copilot
+  "chat.agent.enabled": false
 }
+
