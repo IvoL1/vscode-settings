@@ -1,5 +1,3 @@
-import type { Config } from 'jest';
-
 // Importa o tipo Config do Jest (framework de testes)
 import type { Config } from 'jest';
 
