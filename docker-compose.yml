@@ -1,0 +1,27 @@
+services:
+  # Seu banco de dados (PostgreSQL)
+  postgres: # Nome do serviço do banco de dados (pode ser db, postgres_db, etc.)
+    image: postgres:15-alpine
+    ports:
+      - '5432:5432' # O Postgres normalmente usa a porta 5432.
+    environment:
+      POSTGRES_DB: app_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - database:/var/lib/postgresql/data # Conecta o volume persistente
+
+  # Sua aplicação Node.js (que usa o Dockerfile)
+  app: # Nome do serviço da sua aplicação (ex: api, backend, node_app)
+    build: # <--- Aqui usamos 'build' porque você tem um Dockerfile para sua aplicação!
+      context: . # Onde o Dockerfile está (neste caso, na mesma pasta do docker-compose.yaml)
+    ports:
+      - '3000:3000' # Conecta a porta 3000 do seu computador com a porta 3000 do seu app.
+    environment: # Variáveis de ambiente que seu app pode precisar
+      DATABASE_URL: postgres://admin:secret@postgres:5432/app_db # Como seu app se conecta ao banco de dados!
+      NODE_ENV: development # Garante que o app rode em modo de produção
+    depends_on: # <--- Diz que seu app precisa que o banco de dados esteja funcionando antes de iniciar
+      - postgres
+
+volumes:
+  database:
